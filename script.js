@@ -8,7 +8,7 @@ document.getElementById('searchButton').addEventListener('click', () => {
 });
 
 function fetchMovieData(query) {
-    fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=1b0b2b1a}`)
+    fetch(`http://www.omdbapi.com/?s=${query}&apikey=${apiKey}`)
         .then(response => response.json())
         .then(data => {
             console.log(data);
